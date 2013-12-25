@@ -106,11 +106,11 @@ const int staleCacheSeconds = 5;  // the lower this value, the pickier you are a
      ^(NSArray *placemarks, NSError *error) {
          [self.geocodingTimer invalidate];
          if (error == nil) {
-             CLPlacemark *placemark = [placemarks objectAtIndex:0];
+             CLPlacemark *placemark = placemarks[0];
              
-             self.address = [[placemark addressDictionary] objectForKey:(NSString *)kABPersonAddressStreetKey];
-             self.city = [[placemark addressDictionary] objectForKey:(NSString *)kABPersonAddressCityKey];
-             self.state = [[placemark addressDictionary] objectForKey:(NSString *)kABPersonAddressStateKey];
+             self.address = [placemark addressDictionary][(NSString *)kABPersonAddressStreetKey];
+             self.city = [placemark addressDictionary][(NSString *)kABPersonAddressCityKey];
+             self.state = [placemark addressDictionary][(NSString *)kABPersonAddressStateKey];
              self.zipcode = [placemark postalCode];
              self.country = [placemark country];
              // you can also use the same format to fetch administrative area, sub-administrative area, and locality.
