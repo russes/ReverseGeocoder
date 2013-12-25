@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B62E16AD186B932200017ED6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B62E16AC186B932200017ED6 /* Default-568h@2x.png */; };
 		EC36893315E300E000A2B5F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36893215E300E000A2B5F0 /* UIKit.framework */; };
 		EC36893515E300E000A2B5F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36893415E300E000A2B5F0 /* Foundation.framework */; };
 		EC36893715E300E000A2B5F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36893615E300E000A2B5F0 /* CoreGraphics.framework */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B62E16AC186B932200017ED6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EC36892E15E300E000A2B5F0 /* ReverseGeocoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReverseGeocoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC36893215E300E000A2B5F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC36893415E300E000A2B5F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,6 +65,7 @@
 		EC36892315E300E000A2B5F0 = {
 			isa = PBXGroup;
 			children = (
+				B62E16AC186B932200017ED6 /* Default-568h@2x.png */,
 				EC3BB43415E446BE00E76603 /* Default.png */,
 				EC3BB41215E4302B00E76603 /* icon.png */,
 				EC36893815E300E000A2B5F0 /* ReverseGeocoder */,
@@ -143,7 +146,7 @@
 		EC36892515E300E000A2B5F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jeff Grimes";
 			};
 			buildConfigurationList = EC36892815E300E000A2B5F0 /* Build configuration list for PBXProject "ReverseGeocoder" */;
@@ -171,6 +174,7 @@
 				EC36895815E3019000A2B5F0 /* ViewController.xib in Resources */,
 				EC36893D15E300E000A2B5F0 /* InfoPlist.strings in Resources */,
 				EC3BB43715E4473C00E76603 /* Default.png in Resources */,
+				B62E16AD186B932200017ED6 /* Default-568h@2x.png in Resources */,
 				EC3BB43915E4495000E76603 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
