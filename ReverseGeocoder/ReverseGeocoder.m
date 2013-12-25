@@ -30,12 +30,12 @@ const int staleCacheSeconds = 5;  // the lower this value, the pickier you are a
 
 - (id)init {
     if (self = [super init]) {
-        self.geocoder = [[[CLGeocoder alloc] init] autorelease];
-        self.locationManager = [[[CLLocationManager alloc] init] autorelease];
+        self.geocoder = [[CLGeocoder alloc] init];
+        self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-        self.locationTimer = [[[NSTimer alloc] init] autorelease];
-        self.geocodingTimer = [[[NSTimer alloc] init] autorelease];
+        self.locationTimer = [[NSTimer alloc] init];
+        self.geocodingTimer = [[NSTimer alloc] init];
         delegateHasPlacemarks = NO;
     }
     return self;
@@ -157,13 +157,6 @@ const int staleCacheSeconds = 5;  // the lower this value, the pickier you are a
 
 - (void)dealloc {
     self.geocoderDelegate = nil;
-    self.geocoder = nil;
-    self.locationManager = nil;
-    self.locationTimer = nil;
-    self.geocodingTimer = nil;
-    self.country = nil;
-    self.zipcode = nil;
-    [super dealloc];
 }
 
 @end

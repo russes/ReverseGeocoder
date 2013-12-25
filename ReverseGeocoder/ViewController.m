@@ -16,7 +16,7 @@ NSString *errorStringLocationServicesDisabled = @"Location Services disabled.";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.errorLabel.text = @"";
-    self.geocoder = [[[ReverseGeocoder alloc] init] autorelease];
+    self.geocoder = [[ReverseGeocoder alloc] init];
     self.geocoder.geocoderDelegate = self;
 }
 
@@ -79,18 +79,5 @@ NSString *errorStringLocationServicesDisabled = @"Location Services disabled.";
     // Dispose of any resources that can be recreated.
 }
 
-- (void)dealloc {
-    self.geocoder = nil;
-    self.spinner = nil;
-    self.field0 = nil;
-    self.field1 = nil;
-    self.field2 = nil;
-    self.field3 = nil;
-    self.field4 = nil;
-    self.field5 = nil;
-    self.field6 = nil;
-    self.errorLabel = nil;
-    [super dealloc];
-}
 
 @end

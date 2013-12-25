@@ -23,21 +23,21 @@
     BOOL delegateHasPlacemarks;
 }
 
-@property (nonatomic, assign) id <GeocoderProtocol> geocoderDelegate;
-@property (nonatomic, retain) CLGeocoder *geocoder;
-@property (nonatomic, retain) CLLocationManager *locationManager;
-@property (nonatomic, retain) NSTimer *locationTimer;
-@property (nonatomic, retain) NSTimer *geocodingTimer;
+@property (nonatomic, weak) id <GeocoderProtocol> geocoderDelegate;
+@property (nonatomic, strong) CLGeocoder *geocoder;
+@property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic, strong) NSTimer *locationTimer;
+@property (nonatomic, strong) NSTimer *geocodingTimer;
 @property (nonatomic, assign) float latitude;
 @property (nonatomic, assign) float longitude;
-@property (nonatomic, retain) NSString *address;
-@property (nonatomic, retain) NSString *city;
-@property (nonatomic, retain) NSString *state;
-@property (nonatomic, retain) NSString *zipcode;
-@property (nonatomic, retain) NSString *country;
-@property (nonatomic, retain) NSString *administrativeArea;
-@property (nonatomic, retain) NSString *subAdministrativeArea;
-@property (nonatomic, retain) NSString *locality;
+@property (nonatomic, strong) NSString *address;
+@property (nonatomic, strong) NSString *city;
+@property (nonatomic, strong) NSString *state;
+@property (nonatomic, strong) NSString *zipcode;
+@property (nonatomic, strong) NSString *country;
+@property (nonatomic, strong) NSString *administrativeArea;
+@property (nonatomic, strong) NSString *subAdministrativeArea;
+@property (nonatomic, strong) NSString *locality;
 
 + (BOOL)areLocationServicesEnabled;
 
